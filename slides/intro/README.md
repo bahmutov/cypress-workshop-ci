@@ -36,8 +36,8 @@ Jump to: [Generic CI](/?p=generic-ci), [GitHub Action](/?p=github-action), [Circ
 ## Logistics
 
 ### Time 🕰
-- total workshop duration 3-4 hours
-- 10 minute break after each hour
+- total workshop duration ~4 hours over two days
+- 5 minute break after each hour
 
 ### Remote Workshop 🖥
 - I will go through all steps
@@ -258,7 +258,7 @@ While the application is running in one terminal, from the second terminal exeuc
 ![Cypress tests running locally](./images/tests.gif)
 
 ---
-## Continuous Integration
+## Goal for Continuous Integration
 
 Build the app and run the tests on CI
 - on every commit
