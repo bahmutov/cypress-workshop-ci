@@ -53,13 +53,15 @@ You will need:
 
 - `git` to clone the repository
 - Node v12+ to install and run locally
-- 👉 fork the [cypress-io/cypress-workshop-ci-example](https://github.com/cypress-io/cypress-workshop-ci-example) now 👈
+- 👉 fork the [bahmutov/cypress-workshop-ci-example](https://github.com/bahmutov/cypress-workshop-ci-example) now 👈
+
+(or use `degit`, see the next slide 👇)
 
 +++
 **Alternative:** use [degit](https://github.com/Rich-Harris/degit)
 
 ```shell
-$ npx degit cypress-io/cypress-workshop-ci-example ci-example
+$ npx degit bahmutov/cypress-workshop-ci-example ci-example
 $ cd ci-example
 $ git init
 $ git add .
@@ -82,9 +84,10 @@ $ git commit -m "first commit"
 ## Clone to local machine
 
 ```
-git clone git@github.com:bahmutov/cypress-workshop-ci-example.git cypress-workshop-ci-example-fork
-cd cypress-workshop-ci-example-fork
+git clone git@github.com:bahmutov/cypress-workshop-ci-example.git ci-example
+cd ci-example
 ```
+
 +++
 ## Inspect the application
 
@@ -104,7 +107,7 @@ It is a static site build with [11ty](https://www.11ty.dev/)
 ## Look at the NPM scripts
 ```
 $ npm run
-Lifecycle scripts included in cypress-workshop-ci-example:
+Lifecycle scripts included in ci-example:
   start
     eleventy --serve
 
@@ -171,7 +174,7 @@ Use either `npm i` or `npm ci`
 ```
 $ npm i
 ...
-> cypress@6.7.1 postinstall /Users/gleb/git/cypress-workshop-ci-example-fork/node_modules/cypress
+> cypress@6.7.1 postinstall /Users/gleb/git/ci-example-fork/node_modules/cypress
 > node index.js --exec install
 
 
@@ -259,6 +262,6 @@ Build the app and run the tests on CI
 - on every commit
 - on every pull request
 
-Goal 🥅 is to have full confidence in the deployed application
+Goal 🥅 is to have the full confidence in the deployed application
 
 Jump to: [Generic CI](/?p=generic-ci), [GitHub Action](/?p=github-action), [CircleCI](/?p=circleci), [Netlify Build](/?p=netlify-build)

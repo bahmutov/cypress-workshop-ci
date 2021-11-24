@@ -9,7 +9,7 @@ You will need:
 
 - `git` to clone the repository
 - Node v12+ to install and run locally
-- 👉 fork the [cypress-io/cypress-workshop-ci-example](https://github.com/cypress-io/cypress-workshop-ci-example) now 👈
+- 👉 fork the [bahmutov/cypress-workshop-ci-example](https://github.com/bahmutov/cypress-workshop-ci-example) now 👈
 
 ### Create free accounts
 
@@ -42,7 +42,7 @@ This workshop should have all the content necessary to learn how to run Cypress 
 
 1. Introduction [slides](https://cypress-workshop-ci.netlify.app/?p=intro)
    1. requirements
-   2. example repo [cypress-io/cypress-workshop-ci-example](https://github.com/cypress-io/cypress-workshop-ci-example)
+   2. example repo [bahmutov/cypress-workshop-ci-example](https://github.com/bahmutov/cypress-workshop-ci-example)
    3. NPM scripts and commands
    4. Cypress binary and info
 2. Running Cypress on generic CI [slides](https://cypress-workshop-ci.netlify.app/?p=generic-ci)
@@ -73,7 +73,7 @@ This workshop should have all the content necessary to learn how to run Cypress 
 
 ## Example application
 
-We will test the example application from the repo [cypress-io/cypress-workshop-ci-example](https://github.com/cypress-io/cypress-workshop-ci-example). You should fork that repo under your GitHub account and use with each CI provider.
+We will test the example application from the repo [bahmutov/cypress-workshop-ci-example](https://github.com/bahmutov/cypress-workshop-ci-example). You should fork that repo under your GitHub account and use with each CI provider.
 
 ## Attribution
 
