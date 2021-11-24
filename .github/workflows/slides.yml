@@ -1,0 +1,30 @@
+name: slides
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+
+      - name: Install dependencies 📦
+        uses: bahmutov/npm-install@v1
+
+      # build and deploy new version of the slides
+      - name: Build slides 🏗
+        run: npm run build -- --base /cypress-workshop-ci/
+
+      - name: Show the built folder 📋
+        run: ls -la dist
+
+      # if the tests passed, publish the application
+      # https://github.com/peaceiris/actions-gh-pages
+      - name: Publish slides 🌐
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
