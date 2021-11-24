@@ -2,7 +2,7 @@
 
 How to run Cypress on popular CI services
 
-Code at [github.com/cypress-io/cypress-workshop-ci](https://github.com/cypress-io/cypress-workshop-ci)
+Code at [github.com/bahmutov/cypress-workshop-ci](https://github.com/bahmutov/cypress-workshop-ci)
 
 Jump to: [Generic CI](/?p=generic-ci), [GitHub Action](/?p=github-action), [CircleCI](/?p=circleci), [Netlify Build](/?p=netlify-build)
 
@@ -36,8 +36,8 @@ Jump to: [Generic CI](/?p=generic-ci), [GitHub Action](/?p=github-action), [Circ
 ## Logistics
 
 ### Time 🕰
-- total workshop duration 3-4 hours
-- 10 minute break after each hour
+- total workshop duration ~4 hours over two days
+- 5 minute break after each hour
 
 ### Remote Workshop 🖥
 - I will go through all steps
@@ -68,7 +68,9 @@ $ git add .
 $ git commit -m "first commit"
 ```
 
-+++
+Then create a new repo on GitHub and push the code there.
+
+---
 ## Create free accounts
 
 - GitHub [https://github.com/](https://github.com/)
@@ -80,7 +82,7 @@ $ git commit -m "first commit"
 ## Forked example repo
 
 ![Forked repo](./images/forked-repo.png)
----
++++
 ## Clone to local machine
 
 ```
@@ -88,7 +90,7 @@ git clone git@github.com:bahmutov/cypress-workshop-ci-example.git ci-example
 cd ci-example
 ```
 
-+++
+---
 ## Inspect the application
 
 ```
@@ -174,7 +176,7 @@ Use either `npm i` or `npm ci`
 ```
 $ npm i
 ...
-> cypress@6.7.1 postinstall /Users/gleb/git/ci-example-fork/node_modules/cypress
+> cypress@6.7.1 postinstall /Users/gleb/git/ci-example/node_modules/cypress
 > node index.js --exec install
 
 
@@ -213,7 +215,7 @@ System Memory: 17.2 GB free 270 MB
 ```
 $ npm start
 
-> cypress-workshop-ci-example@1.0.0 start /Users/gleb/git/cypress-workshop-ci-example-fork
+> ci-example@1.0.0 start /Users/gleb/git/ci-example
 > eleventy --serve
 
 Writing _site/README/index.html from ./README.md.
@@ -240,7 +242,7 @@ Watching…
 ```
 $ npm run build
 
-> cypress-workshop-ci-example@1.0.0 build /Users/gleb/git/cypress-workshop-ci-example
+> ci-example@1.0.0 build /Users/gleb/git/ci-example
 > eleventy
 
 Writing _site/README/index.html from ./README.md.
@@ -256,7 +258,7 @@ While the application is running in one terminal, from the second terminal exeuc
 ![Cypress tests running locally](./images/tests.gif)
 
 ---
-## Continuous Integration
+## Goal for Continuous Integration
 
 Build the app and run the tests on CI
 - on every commit
