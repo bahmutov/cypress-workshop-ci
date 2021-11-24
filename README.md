@@ -20,19 +20,19 @@ You will need:
 
 ## Slides 🖥
 
-See the presentation at [https://cypress-workshop-ci.netlify.app/][presentation]. Every section of the presentation has a subfolder in the [slides](./slides) folder with a Markdown file. The Markdown is rendered into HTML using [Vite and Reveal.js combination](https://glebbahmutov.com/blog/reveal-vite/). You can open the presentation by clicking on "view slides" links in the table below.
+See the presentation at [https://glebbahmutov.com/cypress-workshop-ci/][presentation]. Every section of the presentation has a subfolder in the [slides](./slides) folder with a Markdown file. The Markdown is rendered into HTML using [Vite and Reveal.js combination](https://glebbahmutov.com/blog/reveal-vite/). You can open the presentation by clicking on "view slides" links in the table below.
 
-[presentation]: https://cypress-workshop-ci.netlify.app/
+[presentation]: https://glebbahmutov.com/cypress-workshop-ci/
 
 ## Content 🗂
 
 topic | Markdown | view slides
 ---|---|---
-Introduction | [intro](./slides/intro/README.md) | [intro slides](https://cypress-workshop-ci.netlify.app/?p=intro)
-Generic CI | [generic-ci](./slides/generic-ci/README.md) | [generic ci slides](https://cypress-workshop-ci.netlify.app/?p=generic-ci)
-GitHub Action | [github-action](./slides/github-action/README.md) | [github action slides](https://cypress-workshop-ci.netlify.app/?p=github-action)
-Circle CI Orb | [circleci](./slides/circleci/README.md) | [circleci slides](https://cypress-workshop-ci.netlify.app/?p=circleci)
-Netlify Build plugin | [netlify-build](./slides/netlify-build/README.md) | [netlify build slides](https://cypress-workshop-ci.netlify.app/?p=netlify-build)
+Introduction | [intro](./slides/intro/README.md) | [intro slides](https://glebbahmutov.com/cypress-workshop-ci//?p=intro)
+Generic CI | [generic-ci](./slides/generic-ci/README.md) | [generic ci slides](https://glebbahmutov.com/cypress-workshop-ci//?p=generic-ci)
+GitHub Action | [github-action](./slides/github-action/README.md) | [github action slides](https://glebbahmutov.com/cypress-workshop-ci//?p=github-action)
+Circle CI Orb | [circleci](./slides/circleci/README.md) | [circleci slides](https://glebbahmutov.com/cypress-workshop-ci//?p=circleci)
+Netlify Build plugin | [netlify-build](./slides/netlify-build/README.md) | [netlify build slides](https://glebbahmutov.com/cypress-workshop-ci//?p=netlify-build)
 
 ## Self-paced workshop
 
@@ -40,30 +40,30 @@ This workshop should have all the content necessary to learn how to run Cypress 
 
 ## Content index
 
-1. Introduction [slides](https://cypress-workshop-ci.netlify.app/?p=intro)
+1. Introduction [slides](https://glebbahmutov.com/cypress-workshop-ci/?p=intro)
    1. requirements
    2. example repo [bahmutov/cypress-workshop-ci-example](https://github.com/bahmutov/cypress-workshop-ci-example)
    3. NPM scripts and commands
    4. Cypress binary and info
-2. Running Cypress on generic CI [slides](https://cypress-workshop-ci.netlify.app/?p=generic-ci)
+2. Running Cypress on generic CI [slides](https://glebbahmutov.com/cypress-workshop-ci/?p=generic-ci)
    1. GitHub CI workflow
    2. caching dependencies
    3. waiting for the server to start
    4. storing test artifacts on CI
    5. recording tests on Cypress Dashboard
-3. Cypress GitHub Action [slides](https://cypress-workshop-ci.netlify.app/?p=github-action)
+3. Cypress GitHub Action [slides](https://glebbahmutov.com/cypress-workshop-ci/?p=github-action)
    1. installing and running Cypress using action
    2. building the application
    3. action versions
    4. run tests in parallel
    5. split workflow into jobs
-4. Cypress CircleCI Orb [slides](https://cypress-workshop-ci.netlify.app/?p=circleci)
+4. Cypress CircleCI Orb [slides](https://glebbahmutov.com/cypress-workshop-ci/?p=circleci)
    1. running the tests
    2. recording the test artifacts
    3. saving the workspace
    4. separate the install job from the test job
    5. testing in parallel
-5. Cypress Netlify plug [slides](https://cypress-workshop-ci.netlify.app/?p=netlify-build)
+5. Cypress Netlify plug [slides](https://glebbahmutov.com/cypress-workshop-ci/?p=netlify-build)
    1. deploy project on Netlify
    2. run E2E tests after deploy
    3. recording test results
