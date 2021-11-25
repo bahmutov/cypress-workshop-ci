@@ -414,6 +414,14 @@ See [bahmutov/todomvc-no-tests-vercel](https://github.com/bahmutov/todomvc-no-te
 - "Make Cypress Run Faster by Splitting Specs" at https://glebbahmutov.com/blog/split-spec/ Dec 2020
 - "Faster, easier, end-to-end testing with CircleCI and Cypress" at https://www.youtube.com/watch?v=v7FCj2LOWgE Oct 2020
 
++++
+
+## Bonus: Cypress Integration App for X
+
+Post pull request results from any CI to GitHub / GitLab / BitBucket
+
+Watch the video "Add Cypress GitHub Integration To A Repo Step By Step" https://youtu.be/4TLjsCmXZlM
+
 ---
 
 ## ⌛️ Review
