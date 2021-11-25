@@ -357,7 +357,7 @@ workflows:
 + parallelism: 4
 ```
 
-**🏎 tip:** CircleCI gives 4 parallel containers for free for open source public projects.
+**🏎 tip:** CircleCI gives 16(!) parallel containers for free for open source public projects.
 
 +++
 ![Three machines joined in time](./images/only-3.png)
