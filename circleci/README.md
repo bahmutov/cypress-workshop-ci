@@ -373,6 +373,31 @@ workflows:
 - run tests on Windows, or Mac
 
 ---
+## How to Keep Cypress Tests in Another Repo While Using CircleCI
+
+Blog post https://glebbahmutov.com/blog/how-to-keep-cypress-tests-in-another-repo-with-circleci/
+
+- use one repo to build and deploy the application
+- after deploy trigger CircleCI workflow that runs the Cypress tests
+- pass the `baseUrl` as a workflow parameter
+
++++
+
+Use [bahmutov/trigger-circleci-pipeline](https://github.com/bahmutov/trigger-circleci-pipeline)
+
+```
+# assuming the environment variable CIRCLE_CI_API_TOKEN
+# has your personal CircleCI token, trigger a workflow
+# in the CircleCI project bahmutov/todomvc-tests-circleci
+# and pass pipeline parameters
+$ npx trigger-circleci-pipeline \
+    --org bahmutov --project todomvc-tests-circleci --branch ${BRANCH_NAME} \
+    --parameters TEST_URL=${TEST_URL},TEST_BRANCH=${BRANCH_NAME}
+```
+
+See [bahmutov/todomvc-no-tests-vercel](https://github.com/bahmutov/todomvc-no-tests-vercel) and [bahmutov/todomvc-tests-circleci](https://github.com/bahmutov/todomvc-tests-circleci) example
+
+---
 ## Learn more 🎓
 
 ### Resources 📚
@@ -380,12 +405,17 @@ workflows:
 - [github.com/cypress-io/circleci-orb/blob/master/docs/examples.md](https://github.com/cypress-io/circleci-orb/blob/master/docs/examples.md)
 - [github.com/cypress-io/circleci-orb/blob/master/docs/recipes.md](https://github.com/cypress-io/circleci-orb/blob/master/docs/recipes.md)
 
++++
+
 ### Blogs and talks 📝
+
+- anything tagged "circle" at https://glebbahmutov.com/blog/tags/circle/
 - "Start CircleCI Machines Faster by Using RAM Disk" at https://glebbahmutov.com/blog/circle-ram-disk/ Jan 2021
 - "Make Cypress Run Faster by Splitting Specs" at https://glebbahmutov.com/blog/split-spec/ Dec 2020
 - "Faster, easier, end-to-end testing with CircleCI and Cypress" at https://www.youtube.com/watch?v=v7FCj2LOWgE Oct 2020
 
 ---
+
 ## ⌛️ Review
 
 - using [cypress-io/circleci-orb](github.com/cypress-io/circleci-orb) is the simplest way to install, cache, and run Cypress tests on CircleCI
