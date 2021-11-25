@@ -63,6 +63,7 @@ This workshop should have all the content necessary to learn how to run Cypress 
    3. saving the workspace
    4. separate the install job from the test job
    5. testing in parallel
+   6. set up Cypress GitHub Integration
 5. Cypress Netlify plug [slides](https://glebbahmutov.com/cypress-workshop-ci/?p=netlify-build)
    1. deploy project on Netlify
    2. run E2E tests after deploy

@@ -58,6 +58,7 @@ You will need:
 (or use `degit`, see the next slide 👇)
 
 +++
+
 **Alternative:** use [degit](https://github.com/Rich-Harris/degit)
 
 ```shell
@@ -82,7 +83,9 @@ Then create a new repo on GitHub and push the code there.
 ## Forked example repo
 
 ![Forked repo](./images/forked-repo.png)
+
 +++
+
 ## Clone to local machine
 
 ```
@@ -105,7 +108,9 @@ drwxr-xr-x  3 gleb  staff      96 Mar 17 12:47 cypress
 ```
 
 It is a static site build with [11ty](https://www.11ty.dev/)
+
 +++
+
 ## Look at the NPM scripts
 ```
 $ npm run
@@ -123,6 +128,7 @@ available via `npm run-script`:
 ```
 
 +++
+
 ## Look at cypress.json
 
 ```
@@ -134,7 +140,9 @@ $ cat cypress.json
   "baseUrl": "http://localhost:8080"
 }
 ```
+
 +++
+
 ## Look at cypress/integration
 
 ```bash
@@ -186,6 +194,7 @@ added 570 packages from 551 contributors and audited 570 packages in 9.072s
 ```
 
 +++
+
 ## 💡 Cypress binary
 
 - NPM modules are installed in `node_modules`
@@ -207,6 +216,7 @@ System Memory: 17.2 GB free 270 MB
 📚 docs at [on.cypress.io/command-line#cypress-info](https://on.cypress.io/command-line#cypress-info)
 
 +++
+
 ## How do I run the site locally?
 
 - from the terminal `npm start`
@@ -234,6 +244,7 @@ Watching…
 ```
 
 +++
+
 ## What does the app build?
 
 - output folder `_site`
