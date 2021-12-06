@@ -388,6 +388,34 @@ jobs:
 - working inside a monorepo [https://glebbahmutov.com/blog/test-monorepo-apps/](https://glebbahmutov.com/blog/test-monorepo-apps/)
 
 ---
+## Reusable Workflows
+
+GitHub has introduced _reusable workflows_, and I have a few common public workflows at [bahmutov/cypress-workflows](https://github.com/bahmutov/cypress-workflows). Example:
+
+```yml
+name: ci
+on: [push]
+jobs:
+  test:
+    uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
+```
+
++++
+Run in parallel on N machines
+
+```yml
+name: ci
+on: [push]
+jobs:
+  parallel-test:
+    uses: bahmutov/cypress-workflows/.github/workflows/parallel.yml@v1
+    with:
+      n: 3
+    secrets:
+      recordKey: ${{ secrets.CYPRESS_RECORD_KEY }}
+```
+
+---
 ## ⌛️ Review
 
 - using [cypress-io/github-action](https://github.com/cypress-io/github-action) is the simplest way to install, cache, and run Cypress tests
